@@ -53,25 +53,107 @@
       </div>
     </div>
 
-	<!-- Programming panel -->
+	<!-- C++ panel -->
     <div class="container">
-      <div class="panel panel-primary">
-		<div class="panel-heading">
-			<h3 class="panel-title">Programming</h3>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">C++</h3>
+			</div>
+			<div class="panel-body">
+				<h2>FBX Model Converter</h2>
+				<p>The FBX model converter is a tool that uses Autodesk's FBX SDK to convert FBX files to a custom binary format for my game Protowave. I created the binary format for Protowave so that models can be loaded at runtime very quickly. The tool also generates material properties so that Unity can read the shader and shader attributes used on each material. This tool will allow users to import their own models into the game, allowing a much greater level of customization for the track editor.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-3">
+						<a href="http://i.imgur.com/AiPu4ZW.png" class="thumbnail">
+							<img src="http://i.imgur.com/AiPu4ZW.png" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="http://i.imgur.com/uQXqSjB.png" class="thumbnail">
+							<img src="http://i.imgur.com/uQXqSjB.png" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="panel-body">
-			<h2>C#</h2>
-			
-			<h2>C++</h2>
-			
-			<h2>SourcePawn</h2>
-			
-			<h2>Other Languages</h2>
-			AutoHotkey
-			Java
-			Python
+	</div>
+	
+	<!-- C# panel -->
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">C#</h3>
+			</div>
+			<div class="panel-body">
+				<h2>Realtime Path Deformation</h2>
+				<p>For Protowave's track editor, I had to create an algorithm to deform an arbitrary mesh along a path. I did this be forming a bezier curve from two points, and aligning the mesh's vertices to fit the curve. The algorithm was made more efficient for runtime operation by grouping the mesh's vertices into cross sections with a custom data structure. Expensive calculations would only have to be done on each cross section of the mesh instead of on every vertex.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-3">
+						<a href="http://i.imgur.com/JLUss.png" class="thumbnail">
+							<img src="http://i.imgur.com/JLUss.png" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="http://i.imgur.com/TlNUa.png" class="thumbnail">
+							<img src="http://i.imgur.com/TlNUa.png" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="http://i.imgur.com/tDN5P.png" class="thumbnail">
+							<img src="http://i.imgur.com/tDN5P.png" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="http://i.imgur.com/nbRtla4.png" class="thumbnail">
+							<img src="http://i.imgur.com/nbRtla4.png" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
-	  </div>
+    </div>
+	
+	<!-- SourcePawn panel -->
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">SourcePawn</h3>
+			</div>
+			<div class="panel-body">
+				<h2>Defrag Mod for Counter-Strike: Global Offensive</h2>
+				<p>This is a sourcemod plugin which attempts to mimic some of the air strafe physics of Quake 3 Arena.</p>
+				<div class="col-xs-6 col-md-3">
+					<a href="https://www.youtube.com/watch?v=4goRdNXAUbg" class="thumbnail">
+						<img src="https://img.youtube.com/vi/4goRdNXAUbg/mqdefault.jpg" style="height: 180px; width: 100%; display: block;"></img>
+					</a>
+				</div>
+			</div>
+		</div>
+    </div>
+	
+	<!-- AutoHotkey panel -->
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">AutoHotkey</h3>
+			</div>
+			<div class="panel-body">
+				<h2>Arrow Generator for Stepmania/OpenITG</h2>
+				<p>This AutoHotkey script allows the user to automatically generate arrows when making charts. The script has intelligent "AI" and will avoid repeated or messy patterns.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-3">
+						<a href="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00219_zps79c25fcd.jpg" class="thumbnail">
+							<img src="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00219_zps79c25fcd.jpg" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00220_zps46ca783a.jpg" class="thumbnail">
+							<img src="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00220_zps46ca783a.jpg" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 
     <!-- Bootstrap core JavaScript
