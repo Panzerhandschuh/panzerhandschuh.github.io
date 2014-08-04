@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-
+	
 	<!-- C++ panel -->
     <div class="container">
 		<div class="panel panel-primary">
@@ -61,16 +61,21 @@
 			</div>
 			<div class="panel-body">
 				<h2>FBX Model Converter</h2>
-				<p>The FBX model converter is a tool that uses Autodesk's FBX SDK to convert FBX files to a custom binary format for my game Protowave. I created the binary format for Protowave so that models can be loaded at runtime very quickly. The tool also generates material properties so that Unity can read the shader and shader attributes used on each material. This tool will allow users to import their own models into the game, allowing for a much greater level of customization for the track editor.</p>
+				<p>The FBX model converter is a tool that uses Autodesk's FBX SDK to convert FBX files to a custom binary format for my game Protowave. I created the binary format for Protowave so that models can be loaded at runtime very quickly. A custom asset management system also had to be created to handle references to imported assets. When all references to an asset are removed, the asset would be freed from memory. The tool also generates material properties so that Unity can read the shader attributes used on each material. This tool will allow users to import their own models into the game, allowing for a much greater level of customization for the track editor.</p>
 				<div class="row">
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-md-3" title="FBX Converter">
 						<a href="http://i.imgur.com/AiPu4ZW.png" class="thumbnail">
 							<img src="http://i.imgur.com/AiPu4ZW.png" style="height: 180px; width: 100%; display: block;"></img>
 						</a>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-md-3" title="Material properties">
 						<a href="http://i.imgur.com/uQXqSjB.png" class="thumbnail">
 							<img src="http://i.imgur.com/uQXqSjB.png" style="height: 180px; width: 100%; display: block;"></img>
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3" title="In-game imported model">
+						<a href="http://i.imgur.com/v5SWwLE.png" class="thumbnail">
+							<img src="http://i.imgur.com/v5SWwLE.png" style="height: 180px; width: 100%; display: block;"></img>
 						</a>
 					</div>
 				</div>
@@ -88,22 +93,22 @@
 				<h2>Realtime Path Deformation</h2>
 				<p>For Protowave's track editor, I had to create an algorithm to deform an arbitrary mesh along a path. I did this by forming a bezier curve from two points, and aligning the mesh's vertices to fit the curve. The algorithm was made more efficient for runtime operation by grouping the mesh's vertices into cross sections with a custom data structure. Expensive calculations would only have to be done on each cross section of the mesh instead of on every vertex.</p>
 				<div class="row">
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-md-3" title="Simple bezier interpolation with cubes">
 						<a href="http://i.imgur.com/JLUss.png" class="thumbnail">
 							<img src="http://i.imgur.com/JLUss.png" style="height: 180px; width: 100%; display: block;"></img>
 						</a>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-md-3" title="Bezier interpolation using cubes and track vertex positions">
 						<a href="http://i.imgur.com/TlNUa.png" class="thumbnail">
 							<img src="http://i.imgur.com/TlNUa.png" style="height: 180px; width: 100%; display: block;"></img>
 						</a>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-md-3" title="Track mesh deformed along bezier curve">
 						<a href="http://i.imgur.com/tDN5P.png" class="thumbnail">
 							<img src="http://i.imgur.com/tDN5P.png" style="height: 180px; width: 100%; display: block;"></img>
 						</a>
 					</div>
-					<div class="col-xs-6 col-md-3">
+					<div class="col-xs-6 col-md-3" title="Final result of interpolating track mesh along bezier curve">
 						<a href="http://i.imgur.com/nbRtla4.png" class="thumbnail">
 							<img src="http://i.imgur.com/nbRtla4.png" style="height: 180px; width: 100%; display: block;"></img>
 						</a>
@@ -144,7 +149,7 @@
 			</div>
 			<div class="panel-body">
 				<h2>Arrow Generator for Stepmania/OpenITG (<a href="https://github.com/Panzerhandschuh/arrow-generator/">View Source</a>)</h2>
-				<p>This AutoHotkey script allows the user to automatically generate arrows when making charts. The script has intelligent "AI" and will avoid repeated or messy patterns.</p>
+				<p>This AutoHotkey script allows the user to automatically generate arrows when making charts. The script was designed to be more intelligent than a simple random arrow generator and will avoid repeated or messy patterns. It also has some options to generate easier or harder patterns.</p>
 				<div class="row">
 					<div class="col-xs-6 col-md-3">
 						<a href="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00219_zps79c25fcd.jpg" class="thumbnail">
