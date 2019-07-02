@@ -53,15 +53,107 @@
       </div>
     </div>
 	
-	<!-- C++ panel -->
+	<!-- Unity Engine panel -->
     <div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h3 id="c++" class="panel-title">C++</h3>
+				<h3 id="unity-engine" class="panel-title">Unity Engine</h3>
 			</div>
 			<div class="panel-body">
-				<h2>3D Path Deformation (<a href="https://github.com/Panzerhandschuh/OpenGLEngine">View Source</a>)</h2>
-				<p>3D path deformation is an algorithm that deforms the shape of an arbitrary mesh along a path, such as a Bézier curve. This project uses <a href="https://www.opengl.org/">OpenGL</a> for 3D rendering and <a href="http://www.assimp.org/">Assimp</a> for importing meshes from external modeling tools. This tool can be used to quickly and easily create complex 3D objects such as roller coasters and race tracks.</p>
+				<h2>Turbo Force - AI Navigation (C#)</h2>
+				<p>AI racers navigate by targetting waypoints that are generated from track spline data. The waypoint generator is robust enough to handle branching tracks, gaps, and surface regions (regeneration zones, dirt patches, etc.). The player can face off against multiple AI racers at various difficulty levels to earn medals and unlock new tracks.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-6">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/eEc9oWsXnXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/dsvR3wymNrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<h2>Turbo Force - Online Multiplayer (C#, <a href="https://partner.steamgames.com/doc/home">Steamworks</a>)</h2>
+				<p>The multiplayer system allows players to gather together in <a href="https://partner.steamgames.com/doc/features/multiplayer/matchmaking">Steam matchmaking lobbies</a> or by connecting to a dedicated server on the server browser. The <a href="https://partner.steamgames.com/doc/api/ISteamNetworking">Steamworks networking API</a> is used to send data across the internet. Player motion is smoothed using techniques similar to Source engine's <a href="https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking#Entity_interpolation">snapshot interpolation</a>. <a href="https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking#Input_prediction">Input prediction</a> is used to minimize input lag and keep the client and server in sync. Network packets are also compressed using <a href="http://trac.bookofhook.com/bookofhook/trac.cgi/wiki/Quake3Networking#Quake3">delta compression</a> to save on network bandwidth.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-6">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/JfyI757wpag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6" title="Server Browser">
+						<a href="../img/ServerBrowser.png" class="thumbnail">
+							<img src="../img/ServerBrowser.png" style="height: 100%; width: 100%; display: block;"></img>
+						</a>
+					</div>
+				</div>
+				<hr />
+				<h2>Turbo Force - Rankings System (C#, PHP, MySQL)</h2>
+				<p>The rankings system uses a PHP/MySQL back-end. When a player completes a track, their time and replay is automatically uploaded to a database. Other players can watch or directly compete with replay ghosts from the database. The rankings UI is designed to support mouse, keyboard and controller input. The UI also supports record filtering and infinite scrolling.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-6">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/WItaIUqx22E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6" title="Rankings Menu">
+						<a href="../img/TurboForceRankings.png" class="thumbnail">
+							<img src="../img/TurboForceRankings.png" style="height: 100%; width: 100%; display: block;"></img>
+						</a>
+					</div>
+				</div>
+				<hr />
+				<h2>Turbo Force - Level Editor UI (C#, <a href="https://docs.unity3d.com/Manual/UISystem.html">Unity UI</a>)</h2>
+				<p>The level editor uses a custom UI system that automatically generates fields for selected objects using C# <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection">Reflection</a>. This system scans property <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/">attributes</a> and then generates an appropriate field for the property's type. Property changes happen in real time and can be undone/redone.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-6">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/m4K_c-osSug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-6" title="Light object's properties">
+						<a href="../img/EditorUI.png" class="thumbnail">
+							<img src="../img/EditorUI.png" style="height: auto; width: 100%; display: block;"></img>
+						</a>
+					</div>
+				</div>
+				<hr />
+				<h2>glTF Asset Importer (C#)  [<a href="https://github.com/Panzerhandschuh/UnityGltf">View Source</a>]</h2>
+				<p>Turbo Force gives track creators the option to import assets from 3D modelling software by using the <a href="https://www.khronos.org/gltf/">glTF file format</a>. This tool supports animations, collision data, and <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddds/dx-graphics-dds-pguide">DDS texture</a> importing. Imported assets are reference counted in order to re-use resources and save memory.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-3" title="glTF Tool">
+						<a href="../img/glTFTool.png" class="thumbnail">
+							<img src="../img/glTFTool.png" style="height: 180px; width: auto; display: block;"></img>
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3" title="glTF Model">
+						<a href="../img/glTFImport.png" class="thumbnail">
+							<img src="../img/glTFImport.png" style="height: 180px; width: auto; display: block;"></img>
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3" title="glTF Model with Animation">
+						<div class="embed-responsive embed-responsive-4by3">
+							<video autoplay loop controls class="embed-responsive-item">
+								<source src="../img/AnimationImport.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- OpenGL panel -->
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 id="opengl" class="panel-title">OpenGL</h3>
+			</div>
+			<div class="panel-body">
+				<h2>Roller Coaster Editor (C++) [<a href="https://github.com/Panzerhandschuh/OpenGLEngine">View Source</a>]</h2>
+				<p>This editor uses a 3D path deformation algorithm to reshape an arbitrary mesh along a path, such as a Bézier curve. <a href="https://www.opengl.org/">OpenGL</a> is used for 3D rendering and <a href="http://www.assimp.org/">Assimp</a> is used for importing meshes from external modeling tools. This tool can be used to quickly and easily create complex 3D objects such as roller coasters and race tracks.</p>
 				<div class="row">
 					<div class="col-xs-6 col-md-4" title="3D Path Deformation">
 						<a href="../img/PathDeform.png" class="thumbnail">
@@ -69,59 +161,29 @@
 						</a>
 					</div>
 				</div>
-				<h2>FBX Model Converter</h2>
-				<p>The FBX model converter is a tool that uses <a href="http://usa.autodesk.com/adsk/servlet/pc/item?siteID=123112&id=10775847">Autodesk's FBX SDK</a> to convert FBX files to a custom binary format for my game Protowave. I created the binary format for Protowave so that models can be loaded at runtime very quickly. A custom asset management system also had to be created to handle references to imported assets. When all references to an asset are removed, the asset would be freed from memory. The tool also generates material properties so that Unity can read the shader attributes used on each material. This tool will allow users to import their own models into the game, allowing for a much greater level of customization for the track editor.</p>
-				<div class="row">
-					<div class="col-xs-6 col-md-3" title="FBX Converter">
-						<a href="http://i.imgur.com/AiPu4ZW.png" class="thumbnail">
-							<img src="http://i.imgur.com/AiPu4ZW.png" style="height: 180px; width: 100%; display: block;"></img>
-						</a>
-					</div>
-					<div class="col-xs-6 col-md-3" title="Material properties">
-						<a href="http://i.imgur.com/uQXqSjB.png" class="thumbnail">
-							<img src="http://i.imgur.com/uQXqSjB.png" style="height: 180px; width: 100%; display: block;"></img>
-						</a>
-					</div>
-					<div class="col-xs-6 col-md-3" title="In-game imported model">
-						<a href="http://i.imgur.com/v5SWwLE.png" class="thumbnail">
-							<img src="http://i.imgur.com/v5SWwLE.png" style="height: 180px; width: 100%; display: block;"></img>
-						</a>
-					</div>
-				</div>
 			</div>
 		</div>
-	</div>
+    </div>
 	
-	<!-- C# panel -->
+	<!-- Game Modifications panel -->
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h3 id="c#" class="panel-title">C#</h3>
+				<h3 id="game-modifications" class="panel-title">Game Modifications</h3>
 			</div>
 			<div class="panel-body">
-				<h2>Protowave - Editor UI</h2>
-				<p>Protowave's track editor uses a custom UI system that automatically generates property fields for the currently selected object using C#'s <a href="https://msdn.microsoft.com/en-us/library/ms173183.aspx?f=255&MSPPError=-2147217396">Reflection</a> feature. This system scans object properties for certain tags/attributes and generates the associated field based on the property's type.</p>
+				<h2>Rhythm Horizon Tools (C#) [<a href="https://github.com/Panzerhandschuh/RHTools">View Source</a>]</h2>
+				<p>These tools were made for converting charts from StepMania to Rhythm Horizon and for randomly generating charts for Rhythm Horizon. While StepMania files are open source and easy to parse, the Rhythm Horizon file formats had to be reverse engineered by analysing the game's binary files.</p>
+				<p>These tools were written with test driven development and SOLID principles in mind. The project structure decouples UI from file parsing and converting, allowing for multiple front end implementations. I plan on implementing a front end once Rhythm Horizon leaves open beta and has a full release.</p>
 				<div class="row">
-					<div class="col-xs-6 col-md-4" title="Light object's properties">
-						<a href="../img/EditorUI.png" class="thumbnail">
-							<img src="../img/EditorUI.png" style="height: 160px; width: 100%; display: block;"></img>
-						</a>
+					<div class="col-xs-6 col-md-6">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/PHxt9eKoQ2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="panel-body">
-				<h2>Protowave - Gameplay</h2>
-				<p>The gameplay in Protowave features high speed, anti-gravity racing that requires the player to have precise control over their vehicle's movement. Since Unity's built-in physics system was not suitable for Protowave's arcade-like gameplay, a completely custom physics system with continuous collision detection was made. Click the thumbnail below to view a video of Protowave's gameplay.</p>
-				<div class="row">
-					<div class="col-xs-6 col-md-4">
-						<a href="https://www.youtube.com/watch?v=7Sule6bjls0" class="thumbnail">
-							<img src="https://img.youtube.com/vi/7Sule6bjls0/maxresdefault.jpg" style="height: 180px; width: 100%; display: block;"></img>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="panel-body">
-				<h2>F-Zero GX Modding (<a href="https://github.com/Panzerhandschuh/FZero-Unity-Tests">View Source</a>)</h2>
+				<hr />
+				<h2>F-Zero GX Modding (C#) [<a href="https://github.com/Panzerhandschuh/FZero-Unity-Tests">View Source</a>]</h2>
 				<p>A track/collisions editor was made for <a href="http://en.wikipedia.org/wiki/F-Zero_GX">F-Zero GX</a> using Unity. Game files had to be extracted, decompressed, and reverse engineered using various techniques to analyse the binary data. The editor parses the binary information and allows modders to edit values and save them back into the game's binary format.</p>
 				<div class="row">
 					<div class="col-xs-6 col-md-3" title="Collisions and entities for Mute City Serial Gaps">
@@ -136,22 +198,32 @@
 					</div>
 					<div class="col-xs-6 col-md-4" title="Editing values with Unity">
 						<a href="http://i.imgur.com/y3D8NFC.png" class="thumbnail">
-							<img src="http://i.imgur.com/y3D8NFC.png" style="height: 120px; width: 100%; display: block;"></img>
+							<img src="http://i.imgur.com/y3D8NFC.png" style="height: 100%; width: 100%; display: block;"></img>
 						</a>
+					</div>
+				</div>
+				<hr />
+				<h2>Defrag Mod for Counter-Strike: Global Offensive (SourcePawn) [<a href="https://github.com/Panzerhandschuh/csgo-defrag/">View Source</a>]</h2>
+				<p>This is a <a href="https://www.sourcemod.net/">SourceMod</a> plugin which attempts to mimic the air strafe physics of Quake 3 Arena.</p>
+				<div class="row">
+					<div class="col-xs-6 col-md-6">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/4goRdNXAUbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
     </div>
 	
-	<!-- Java panel -->
+	<!-- Distributed Systems panel -->
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h3 id="java" class="panel-title">Java</h3>
+				<h3 id="distributed-systems" class="panel-title">Distributed Systems</h3>
 			</div>
 			<div class="panel-body">
-				<h2>Distributed Instant Essay Grading System</h2>
+				<h2>Distributed Instant Essay Grading System (Java)</h2>
 				<p>For this project, I coded a Java service that allows short answer questions to be graded nearly instantly. This was done using <a href="http://hadoop.apache.org/">Apache Hadoop Distributed File System (HDFS)</a> to share grader files among nodes in a server cluster and <a href="https://zookeeper.apache.org/">Apache Zookeeper</a> to route and load balance requests. Additionally, sockets were used to communicate between a master node and worker nodes in a hierarchical fashion. The master node handles all incoming requests from a web app and then routes the requests to be graded on a worker node with the lowest traffic.</p>
 				<div class="row">
 					<div class="col-xs-6 col-md-3" title="Instant Grading System Web App">
@@ -167,55 +239,7 @@
 				</div>
 			</div>
 		</div>
-    </div>
-	
-	<!-- SourcePawn panel -->
-	<div class="container">
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 id="sourcepawn" class="panel-title">SourcePawn</h3>
-			</div>
-			<div class="panel-body">
-				<h2>Defrag Mod for Counter-Strike: Global Offensive (<a href="https://github.com/Panzerhandschuh/csgo-defrag/">View Source</a>)</h2>
-				<p>This is a sourcemod plugin which attempts to mimic some of the air strafe physics of Quake 3 Arena.</p>
-				<div class="row">
-					<div class="col-xs-6 col-md-3">
-						<a href="https://www.youtube.com/watch?v=4goRdNXAUbg" class="thumbnail">
-							<img src="https://img.youtube.com/vi/4goRdNXAUbg/maxresdefault.jpg" style="height: 180px; width: 100%; display: block;"></img>
-						</a>
-					</div>
-				</div>
-				
-				<h2>Other Plugins</h2>
-				<a href="https://github.com/Panzerhandschuh/tf2-surf-server-tools/">Team Fortress 2 Surf Server Tools</a> - Various plugins that allow server owners to improve balance and remove exploits on surf maps.
-			</div>
-		</div>
-    </div>
-	
-	<!-- AutoHotkey panel -->
-	<div class="container">
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 id="autohotkey" class="panel-title">AutoHotkey</h3>
-			</div>
-			<div class="panel-body">
-				<h2>Arrow Generator for Stepmania/OpenITG (<a href="https://github.com/Panzerhandschuh/arrow-generator/">View Source</a>)</h2>
-				<p>This AutoHotkey script allows the user to automatically generate arrows when making charts. The script was designed to be more intelligent than a simple random arrow generator and will avoid repeated or messy patterns. It also has some options to generate easier or harder patterns.</p>
-				<div class="row">
-					<div class="col-xs-6 col-md-3">
-						<a href="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00219_zps79c25fcd.jpg" class="thumbnail">
-							<img src="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00219_zps79c25fcd.jpg" style="height: 180px; width: 100%; display: block;"></img>
-						</a>
-					</div>
-					<div class="col-xs-6 col-md-3">
-						<a href="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00220_zps46ca783a.jpg" class="thumbnail">
-							<img src="http://i99.photobucket.com/albums/l301/DiabolicRemedy/screen00220_zps46ca783a.jpg" style="height: 180px; width: 100%; display: block;"></img>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
+	</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
